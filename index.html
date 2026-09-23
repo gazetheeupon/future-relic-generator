@@ -110,6 +110,46 @@
   @media (max-width:520px){.field-grid{grid-template-columns:1fr;}.meta-grid{grid-template-columns:1fr 1fr;}.meta-item:last-child{grid-column:1/-1;}.card{padding:1rem;}.relic{padding:.9rem;}.artifact-footer{flex-direction:column;gap:.25rem;}.action-row .action{flex:1 1 auto;}}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.action,.relic,.signal-track span{transition:none;}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does the same sentence make the same object?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The text, selected format, strange-o-meter, and reroll number are hashed locally. That hash chooses the date, origin, status, field note, and signal pattern. Nothing is random behind your back, and nothing is stored after you close the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file do I actually get?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An SVG image (future-relic-<id>.svg) that opens in any browser or image viewer and scales to any size without losing quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The share or copy button didn't do anything",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some browsers and operating systems block the clipboard or system share sheet for this kind of content. Download the SVG instead \u2014 it always works and produces the exact same result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this trying to predict the future?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It's a novelty generator that turns your sentence into a strange, consistent-looking artifact for fun. Nothing here is a forecast, analysis, or claim about what will actually happen."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="page-head">
@@ -200,6 +240,19 @@
     <details>
       <summary>Why does the same sentence make the same object?</summary>
       <p>The text, selected format, strange-o-meter, and reroll number are hashed locally. That hash chooses the date, origin, status, field note, and signal pattern. Nothing is random behind your back, and nothing is stored after you close the page.</p>
+    </details>
+  </section>
+
+    <section class="card faq" aria-labelledby="faqHeading">
+    <h2 id="faqHeading">FAQ</h2>
+    <details><summary>What file do I actually get?</summary>
+      <p>An SVG image (<code>future-relic-&lt;id&gt;.svg</code>) that opens in any browser or image viewer and scales to any size without losing quality.</p>
+    </details>
+    <details><summary>The share or copy button didn't do anything</summary>
+      <p>Some browsers and operating systems block the clipboard or system share sheet for this kind of content. Download the SVG instead &mdash; it always works and produces the exact same result.</p>
+    </details>
+    <details><summary>Is this trying to predict the future?</summary>
+      <p>No. It's a novelty generator that turns your sentence into a strange, consistent-looking artifact for fun. Nothing here is a forecast, analysis, or claim about what will actually happen.</p>
     </details>
   </section>
 
